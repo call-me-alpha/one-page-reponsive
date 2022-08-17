@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-white{
+    color: #fff !important;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Helvetica;
+}
+.btn{
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: calc(100% / 3);
+}
+.text-center{
+    text-align: center !important;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+#main{
+    overflow: hidden;
+}
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.nav{
+    display: inline-block;
+}
+.nav li{
+    display: inline-block;
+    position: relative;
+}
+.nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav li a{
+    display: block;
+    line-height: 46px;
+    padding: 0 24px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.nav > li:hover > a,
+.nav .subnav li:hover a{
+    background-color: #ccc;
+    color: #000;
+}
+.nav li:hover .subnav{
+    display: block;
+}
+.nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.nav .subnav li{
+    display: block;
+}
+.nav .subnav a{
+    line-height: 38px;
+    padding: 0 16px;
+    color: #000;
+}
+.menu-moblie,
+.search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 46px;
+    padding: 0 24px;
+    font-size: 15px;
+    color: #fff;
+}
+.menu-moblie:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.search:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../images/slider/chicago.jpg') top center / cover no-repeat;
+}
+.text-content{
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+}
+.text-heading{
+    margin: 23px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+.text-description{
+    font-weight: bolder;
+}
+/* the band */
+.content-section{
+    padding: 64px 0;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+.content-section .section-heading{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.content-section .section-subheading{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.8;
+}
+.content-section .about-text{
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.4;
+}
+.member-list{
+    overflow: hidden;
+    padding: 42px;
+}
+.member-name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.member-img{
+    width: 60%;
+    border-radius: 4px;
+}
+/* tour dates */
+.tour-section{
+    background-color: #000;
+}
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+.sold-out{
+    padding:4px 8px;
+    margin-left: 16px;
+    background-color: #f44336;
+    color: #fff;
+}
+.count{
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    margin-top:-3px;
+    margin-right: 16px;
+}
+.place-list{
+    overflow: hidden;
+    padding: 32px 0;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.place-content{
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+.place-name{
+    margin-bottom: 15px;
+}
+.place-time,
+.place-about{
+    padding: 15px 0;
+}
+.place-time{
+    opacity: 0.8;
+}
+.place-btn{
+    font-size: 16px;
+    padding: 10px 13px;
+}
+.model{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.open{
+    display: flex;
+}
+.model-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: status ease .5s;
+}
+.model-header{
+    height: 130px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #fff;
+    font-weight: 400;
+}
+.fa-suitcase{
+    padding: 0 20px;
+}
+.model-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 14px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.model-close:hover{
+    background-color: #ccc;
+    cursor: pointer;
+    color: #000;
+}
+.model-body{
+    padding: 0 16px;
+    font-size: 15px;
+}
+.model-label,
+.model-input,
+.model-buy{
+    width: 100%;
+}
+.model-label{
+    display: block;
+    padding: 16px 0;
+}
+.model-input{
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.model-buy{
+    margin: 16px 0;
+    padding: 18px;
+    border: none;
+    background-color: #009688;
+}
+.model-buy:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.model-footer{
+    text-align: right;
+    margin: 32px 16px;
+}
+.model-footer a{
+    color: #009688;
+    text-decoration: none;
+}
+@keyframes status {
+    from{transform: translateY(-100%);opacity: 0;}
+    to{transform: translateY(0);opacity: 1;}
+}
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info a{
+    color: #00e;
+    opacity: .8;
+}
+.contact-info a:hover{
+    opacity: 1;
+}
+.contact-info i[class*="fas"]{
+    width: 30px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.form-submit{
+    padding: 10px 15px;
+    float: right;
+}
+.map-section img{
+    width: 100%;
+}
+#footer{
+    padding: 64px;
+}
+.footer-list{
+    width: 100%;
+    font-size: 24px;
+}
+.footer-list li{
+    list-style: none;
+    display: inline-block;
+}
+.footer-list a{
+    color: rgba(0, 0, 0, 0.8);
+}
+.footer-list a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+#footer p{
+    font-size: 15px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 22px;
+}
+@media (min-width: 1024px){
+    .menu-moblie{
+        display: none;
+    }
+}
+@media (min-width: 740px ) and (max-width: 1023px){
+    .menu-moblie{
+        display: none;
+    }
+}
+@media (max-width: 739px){
+    .s-full-width,
+    .s-col-full{
+        width: 100%;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+    }
+    #header {
+        overflow: hidden;
+    }
+    .nav li {
+        display: block;
+    }
+    .nav li a{
+        padding: 1px 24px;
+    }
+    .search {
+        display: none;
+    }
+    .nav{
+        display: block;
+    }
+    .nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    .nav .subnav a{
+        color: #fff;
+        padding: 5px 40px;
+    }
+    .member-item{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .member-item:first-child{
+        margin-top: -30px;
+    }
+    .member-img{
+        width: 80%;
+    }
+    .member-name{
+        padding-bottom: 16px;
+    }
+    .place-item{
+        width: 100%;
+        margin-top: 16px;
+    }
+    .place-btn {
+        padding: 14px 24px;;
+    }
+    .form-submit{
+        padding: 14px 24px;
+    }
+    .model{
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .model-input{
+        padding: 16px;
+    }
+    .contact-form{
+        margin-top: 32px;
+    }
+}
